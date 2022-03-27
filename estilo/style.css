@@ -5,7 +5,18 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi:wght@700&display=swap');
+
+:root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --font0: 'Passion One', 'cursive';
+    --font1: 'Srisakdi', 'cursive';
+}
+
 html, body {
+    font-family: var(--fonte-padrao);
     min-height: 100vh;
     background-color: lightslategray;
 }
@@ -19,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font0);
+    font-size: 3em;
 }
 
 header > p {
@@ -52,8 +65,9 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.288);
-    width: 300px;
 }
 
 footer {
